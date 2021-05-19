@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 400px;
+
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    background-color: #77B060;
+    border: 1px solid #95be84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output {
+    /* display: flex; */
+    width: 300px;
+}
+
+.edge {
+    background-color: #90Be7E;
+}
