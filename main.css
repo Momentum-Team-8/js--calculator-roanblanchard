@@ -5,7 +5,7 @@
 }
 
 .calculator {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: white;
     display: flex;
