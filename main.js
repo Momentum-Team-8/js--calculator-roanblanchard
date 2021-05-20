@@ -7,22 +7,31 @@ let newElement = document.createElement('h1')
 
 
 document.querySelector('#equals').addEventListener('click', function (event) {
-    // output = ""
+    // evaluates the output and prints to the screen, kinda works
     let equals = document.createTextNode(eval(output.innerText))
-    document.getElementById("output").innerHTML = ""
-    newElement.appendChild(equals)
-    output.appendChild(newElement)
+    const erase = document.getElementById("output");
+    erase.textContent = ''
+    // newElement.appendChild(equals)
+    // output.appendChild(newElement)
+    setTimeout(function(){
+        newElement.appendChild(equals)
+        output.appendChild(newElement)
+    }, 200);
+})
+
+document.querySelector('#clear').addEventListener('click', function (event) {
+    // reloads page to clear the screen, sloppy
+    location.reload()
 })
 
 
 
-
-
 document.querySelector('#one').addEventListener('click', function (event){
+    //makes numbers pop up on screen, repeated which is sloppy
     let newEntry = document.createTextNode(event.target.innerHTML)
     newElement.appendChild(newEntry)
     output.appendChild(newElement)
-    console.log(event.target.innerHTML)
+    // console.log(event.target.innerHTML)
 })
 
 document.querySelector('#two').addEventListener('click', function (event){
